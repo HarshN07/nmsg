@@ -26,7 +26,7 @@ const leaderBoard=document.getElementById("leaderboard");
 let leaderList=JSON.parse(localStorage.getItem("leaderboard"));
 if(leaderList===null||leaderList == []){
     leaderList=[];
-    for(i<0;i<5;i++){
+    for(let i=0;i<5;i++){
         leaderList.push([0,"Guest"]);
     }
     localStorage.setItem("leaderboard", JSON.stringify(leaderList));
