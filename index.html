@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href='style.css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Akronim">
+    <link href='https://fonts.googleapis.com/css?family=Amita' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Clicker Script' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+    <h1 id="gHeading">Snake Game</h1>
+    <div id="gameDetails">
+    <span id="score">Score: <span id="svalue">0</span></span>
+    <span id="high">HighScore: <span id="hvalue">0</span></span>
+    </div>
+    <div id="sequence">Sequence: 
+        <span id="red">Red, </span>
+        <span id="blue">Cyan, </span>
+        <span id="yellow">Yellow</span>
+    </div>
+    <div id="gbox">
+        <div id="timer">Timer:<span id="tvalue">60</span></div>
+        <div id="wrapper">
+                <div id="gamespace">
+                    
+                </div>
+                <div id="controls">
+                    <i data-key="ArrowLeft" class="fa-solid fa-arrow-left-long"></i>
+                    <i data-key="ArrowUp" class="fa-solid fa-arrow-up-long"></i>
+                    <i data-key="ArrowRight" class="fa-solid fa-arrow-right-long"></i>
+                    <i data-key="ArrowDown" class="fa-solid fa-arrow-down-long"></i>
+                </div>
+        </div>
+        <br><br>
+        <div id="box" style="display: none;">
+            <div id="title">Leaderboard</div>
+            <div id="leaderboard"></div>
+        </div>
+        <div id="rstbtn">
+            <input type="button" id="LeaderBoard" value="Show/Hide Leader Board" onclick="showdiv()">
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
